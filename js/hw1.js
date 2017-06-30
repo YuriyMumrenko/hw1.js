@@ -1,8 +1,13 @@
 
-alert (document.getElementById("one").innerHTML);
-document.getElementById('ttt').innerHTML= "Hi, dude! How are you doing?";
+var elem = document.querySelector ('#one');
+alert (elem.textContent);
+
+var elems2 = document.querySelector ('#ttt');
+elems2.textContent = "Hi, dude! How are you doing?";
+// elems2.style.color = 'red';
+
 var newP = document.createElement('p');
-newP.innerHTML = 'Hello world!';
+newP.textContent = 'Hello world!';
 wrapperText.insertBefore(newP, wrapperText.children[1]);
 
 
